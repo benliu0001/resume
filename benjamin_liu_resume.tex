@@ -130,7 +130,7 @@
     {\Huge \scshape Benjamin Liu} \\ \vspace{1pt}
     U.S. Citizen \\ \vspace{1pt}
     Lexington, Massachusetts \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ 339-240-2265 ~ \href{mailto:benliu0001@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{benliu0001@gmail.com}} \href{https://github.com/benliu0001}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/benliu0001}} ~ 
+    \small \raisebox{-0.1\height}\faPhone\ 339-240-2265 ~ \href{mailto:benliu0001@gmail.com}{\raisebox{-0.2\height} \faEnvelope\  \underline{benliu0001@gmail.com}} \href{https://github.com/benliu0001}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/benliu0001}} \href{https://www.linkedin.com/in/benliu0001/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/benliu0001}} \\ 
     \vspace{-8pt}
 \end{center}
 
@@ -142,7 +142,69 @@
       {University of Toronto}{September 2021 - December 2025}
       {Honors Bachelor of Science, Computer Science}{Toronto, Canada}
   \resumeSubHeadingListEnd
+  \vspace{-20pt}
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+   \small{\item{
+    \textbf{Languages}{: Python, Java, C/C++, SQL, Assembly Languages} \\
+    \textbf{Developer Tools}{: Shell Scripting in Linux, Git, Agile Methodologies, Google Cloud CLI, Docker, AWS} \\
+    \textbf{Technologies/Frameworks}{: Numpy, OpenCV, PyTorch, Pandas, Pyplot, Scipy, Transformers, RAG} \\
+   }}
+\end{itemize}
+\vspace{-23pt}
 
+
+%
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {\textbf{ML Project Developer} $|$ \emph{PyTorch, Hugging Face, Pandas}}{January 2024 -- April 2024}
+      {mhapy}{Toronto, ON}
+      \resumeItemListStart
+      \resumeItem{Trained a BERT model to analyze the sentiment of users' responses to mental health assessment questions.}
+      \resumeItem{Used Pandas to clean and preprocess Hugging Face datasets to fine tune the BERT model to achieve 60\% accuracy.}
+      \resumeItem{Worked with startup to develop a mental health assessment platform, taking into account use cases and user experience.}
+      \resumeItem{Deployed Postman API to AWS and then Railway to allow for other teams to access the model.}        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-20pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+          {\href{https://utmist.gitlab.io/projects/side-channel-attacks/}{Deep Learning Side Channel Attack} $|$ \emph{Python, PyTorch, Numpy, Scipy}}{January 2024 -- Present}
+          \resumeItemListStart
+          \resumeItem{Developed LSTM, Resnet, and Transformer models to perform a deep-learning side channel attack on an STM32 microcontroller running TinyAES.}
+            \resumeItem{Assumed profiling attack paradigm to collect training data using a microcontroller and oscilloscope to capture power traces of plaintext-ciphertext pairs.}
+            \resumeItem{Researched various methods to extract features from power traces and optimize the models to improve the attack's success rate.}
+            \resumeItem{Recruited, organized, and led a team of 6 other students to work on the project, and managed the project's timeline.}
+          \resumeItem{Presented weekly to introduce essential concepts in hardware security to team members.}
+          \resumeItemListEnd
+          \vspace{-20pt}            
+      \resumeProjectHeading
+      {\textbf{Image Generation Knowledge Distillation} $|$ \emph{Python, PyTorch, Numpy}}{January 2024 -- April 2024}
+          \resumeItemListStart
+          \resumeItem{Developed a model distillation technique, reducing the size of a large pre-trained VAE by 30x while maintaining comparable performance for text-to-image generation.}
+          \resumeItem{Designed and implemented a 7-layer convolutional neural network to mimic both the encoder and decoder of a VAE, achieving efficient latent space encoding and image reconstruction.}
+          \resumeItem{Trained models on datasets including CIFAR-10, Harvard Flower, CC12M, and Deep Fashion-MultiModal to ensure generalization across diverse image sets.}
+          \resumeItem{Demonstrated strong model generalization on unseen and cross-dataset data, optimizing performance through MSE loss, dropout, and weight decay.}
+          \resumeItemListEnd 
+          \vspace{-20pt}
+          \resumeProjectHeading
+            {\href{https://beaverworks.ll.mit.edu/CMS/bw/bwsi_course_embedded_security_and_hardware_hacking}{MIT Embedded Security CTF} $|$ \emph{C, Python}}{February 2020 -- August 2020}
+            \resumeItemListStart              
+            \resumeItem{In a team of 4, designed and implemented a secure firmware update system for an IoT device using C and Python.}
+              \resumeItem{Based on MITRE eCTF competition, assumed man in the middle paradigm to attack other teams by exploiting vulnerabilities in their firmware update systems using python scripts, earning 3rd place in the competition.}
+              \resumeItem{Utilized an HMAC to authenticate users, AES, RSA, and SHA to encrypt firmware, and a Stream Cipher for key generation.}
+              \resumeItem{Received intensive instruction from leading researchers on embedded software, computer architecture, memory management, assembly, cryptography, security, interface analysis, and bit manipulation.}
+            \resumeItemListEnd 
+
+
+    \resumeSubHeadingListEnd
+\vspace{-20pt}
 %------RELEVANT COURSEWORK-------
 \section{Relevant Coursework}
     %\resumeSubHeadingListStart
@@ -163,88 +225,6 @@
         \end{multicols}
         \vspace*{2.0\multicolsep}
     % \resumeSubHeadingListEnd
-
-
-%-----------EXPERIENCE-----------
-% \section{Experience}
-%   \resumeSubHeadingListStart
-
-%     \resumeSubheading
-%       {mhapy}{January 2024 -- April 2024}
-%       {Co-op Developer}{Toronto, Canada}
-%       \resumeItemListStart
-%         \resumeItem{Worked with startup to develop a mental health assessment platform, taking into account use cases and user experience.}
-%         \resumeItem{Trained a BERT model to analyze the sentiment of users' responses to mental health assessment questions.}
-%         \resumeItem{Used Pandas to clean and preprocess Hugging Face datasets to fine tune the BERT model to achieve 60\% accuracy.}
-%         \resumeItem{Deployed Postman API to AWS and then Railway to allow for other teams to access the model.}
-%         \resumeItemListEnd
-    
-%   \resumeSubHeadingListEnd
-% \vspace{-16pt}
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \vspace{-5pt}
-    \resumeSubHeadingListStart
-          \resumeProjectHeading
-          {\href{https://utmist.gitlab.io/projects/side-channel-attacks/}{Deep Learning Side Channel Attack} $|$ \emph{Python, PyTorch, Numpy, Scipy}}{January 2024 -- Present}
-          \resumeItemListStart
-          \resumeItem{Developed LSTM, Resnet, and Transformer models to perform a deep-learning side channel attack on an STM32 microcontroller running TinyAES.}
-            \resumeItem{Assumed profiling attack paradigm to collect training data using a microcontroller and oscilloscope to capture power traces of plaintext-ciphertext pairs.}
-            \resumeItem{Researched various methods to extract features from power traces and optimize the models to improve the attack's success rate.}
-            \resumeItem{Recruited, organized, and led a team of 6 other students to work on the project, and managed the project's timeline.}
-          \resumeItem{Presented weekly to introduce essential concepts in hardware security to team members.}
-          \resumeItemListEnd
-          \vspace{-13pt}            
-          \resumeProjectHeading
-            {\href{https://beaverworks.ll.mit.edu/CMS/bw/bwsi_course_embedded_security_and_hardware_hacking}{MIT Embedded Security CTF} $|$ \emph{C, Python}}{February 2020 -- August 2020}
-            \resumeItemListStart              
-            \resumeItem{In a team of 4, designed and implemented a secure firmware update system for an IoT device using C and Python.}
-              \resumeItem{Based on MITRE eCTF competition, assumed man in the middle paradigm to attack other teams by exploiting vulnerabilities in their firmware update systems using python scripts, earning 3rd place in the competition.}
-              \resumeItem{Utilized an HMAC to authenticate users, AES, RSA, and SHA to encrypt firmware, and a Stream Cipher for key generation.}
-              \resumeItem{Received intensive instruction from leading researchers on embedded software, computer architecture, memory management, assembly, cryptography, security, interface analysis, and bit manipulation.}
-            \resumeItemListEnd 
-            \vspace{-13pt}   
-      \resumeProjectHeading
-      {\textbf{Mental Health Sentiment Analysis} $|$ \emph{Python, PyTorch, Hugging Face, Pandas, AWS}}{January 2024 -- April 2024}
-          \resumeItemListStart
-          \resumeItem{Trained a BERT model to analyze the sentiment of users' responses to mental health assessment questions.}
-          \resumeItem{Used Pandas to clean and preprocess Hugging Face datasets to fine tune the BERT model to achieve 60\% accuracy.}
-          \resumeItem{Worked with startup to develop a mental health assessment platform, taking into account use cases and user experience.}
-          \resumeItem{Deployed Postman API to AWS and then Railway to allow for other teams to access the model.}
-          \resumeItemListEnd 
-          \vspace{-13pt}
-          \resumeProjectHeading
-          {\textbf{Eedi Assessment Analysis} $|$ \emph{Python, PyTorch, NumPy, SciKit Learn}}{August 2023}
-          \resumeItemListStart
-            \resumeItem{Developed a suite of Machine Learning models to analyze and predict the relationship between provided student answers and future performance in an online learning assessment system.}
-            \resumeItem{Compared validation accuracies for Logistic Regression, PCA Matrix completion, and Autoencoder models to decide on a best approach, reaching 75\% accuracy.}
-            \resumeItem{Leveraged augmentations such as regularization penalties to raise the models' accuracies and better generalize predictions.}
-          \resumeItemListEnd 
-          \vspace{-13pt}
-        \resumeProjectHeading
-            {\href{https://github.com/nitvishn/csc110-project/}{Conspiracy Analysis in Social Media} $|$ \emph{Python, Flair, Pyplot}}{December 2021}
-            \resumeItemListStart
-                \resumeItem{Utilized Reddit API in Python to collect data from various subreddits to analyze the spread of conspiracy theories surrounding COVID-19.}
-                \resumeItem{Used Flair for frequency analysis to categorize posts and comments into different conspiracy theories and graphed the spread of each theory over time using pyplot.}
-            \resumeItemListEnd 
-
-    \resumeSubHeadingListEnd
-\vspace{-15pt}
-
-
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, Java, C/C++, SQL, Assembly Languages} \\
-     \textbf{Developer Tools}{: Shell Scripting in Linux, Git, Agile Methodologies, Google Cloud CLI, Docker, AWS} \\
-     \textbf{Technologies/Frameworks}{: SQL, Numpy, OpenCV, PyTorch, Pandas, Pyplot, Scipy} \\
-    }}
- \end{itemize}
- \vspace{-16pt}
-
 
 % %-----------INVOLVEMENT---------------
 % \section{Leadership / Extracurricular}
